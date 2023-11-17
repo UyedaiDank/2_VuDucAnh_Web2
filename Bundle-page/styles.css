@@ -100,71 +100,54 @@ a.nav-link {
 
 /* NAVBAR END */
 
-/* VIDEO */
-/* .btn-div {
-  width: 40%;
-  padding: 0.25rem;
-  border: 1px solid white;
-  transform: translateX(75%);
-  text-align: center;
-} */
-
-.btn-video {
-  font-size: 1rem;
-  font-weight: bold;
-  padding: 0.75rem 5rem;
-  box-shadow: inset 0 0 0 0 black;
-  -webkit-transition: ease-out 0.3s;
-  -moz-transition: ease-out 0.3s;
-  transition: ease-out 0.3s;
-}
-
-.btn-video:hover {
-  box-shadow: inset 16rem 0 0 black;
-  border: 1px solid black;
-}
-
-.title {
-  font-size: 8rem;
-  margin: 1.5rem auto 0;
-  color: #ECE8E1;
-}
-
-.sub-title {
-  font-weight: bold;
-  font-size: 1rem;
-  color: #ECE8E1;
-}
-
-.video {
-  min-width: 100%;
-  min-height: 100%;
+/* CSS cho Carousel và caption */
+.carousel {
+  width: 1000px;
+  height: 600px;
+  margin: auto;
   position: relative;
+  overflow: hidden;
 }
 
-.video-container {
-  overflow-x: hidden;
+.carousel-image {
   width: 100%;
   height: 100%;
-  padding: 0;
-  margin: 0;
-  margin-top: 4%;
+  display: none;
 }
 
-.video-div {
-  min-width: 100%;
-  min-height: 100%;
-  position: relative;
+.carousel-image.active {
+  display: block;
 }
 
-.video-text {
-  vertical-align: middle;
-  text-align: center;
+.carousel-caption {
   position: absolute;
-  z-index: 1;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.5);
+  color: white;
+  padding: 10px;
+  text-align: center;
 }
 
-/* VIDEO END */
+.carousel-button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(0, 0, 0, 0.5);
+  color: white;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.carousel-button.prev {
+  left: 0;
+}
+
+.carousel-button.next {
+  right: 0;
+}
 
 /* FRAME 2 START */
 
