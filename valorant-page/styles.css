@@ -3,7 +3,6 @@
   src: url("fonts/Valorant\ Font.ttf");
 }
 
-
 /* NAVBAR */
 a.nav-link {
   color: white;
@@ -231,7 +230,6 @@ a.nav-link {
 .content-text {
   text-align: justify;
   margin-top: 2rem;
-  width: 18rem;
 }
 
 .content-div {
@@ -242,6 +240,39 @@ a.nav-link {
   width: 100%;
   margin: 3rem 0;
   background-color: black;
+}
+
+.container {
+  display: flex;
+}
+
+.column {
+  flex: 1; /* Distribute available space equally among columns */
+  padding: 10px;
+  margin: 10px;
+  border: 1px solid #ccc;
+  background-image: url(image.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.image-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.column img{
+  height: 300px;
+  width: 500px;
+}
+
+.column p{
+  font-size: 1.3rem;
+}
+
+
+.column span{
+  margin-top: 10%;
 }
 
 /* FRAME 2 END */
