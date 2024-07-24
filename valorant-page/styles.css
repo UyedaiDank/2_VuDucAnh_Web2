@@ -247,7 +247,7 @@ a.nav-link {
 }
 
 .column {
-  flex: 1; /* Distribute available space equally among columns */
+  flex: 1;
   padding: 10px;
   margin: 10px;
   border: 1px solid #ccc;
